@@ -17,6 +17,7 @@ type Client struct {
 
 // iterate through 'machines' trying to connect to each in turn.
 // Assumes that 'machines' is non-empty
+// this may not work perfectly, learning some stuff here :)
 func tryConnect(machines []string, password string, timeout bool) (client, int, error) {
 	var err error
 	for _, address := range machines {
