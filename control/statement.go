@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strings"
 )
 
 func main() {
@@ -11,4 +12,5 @@ func main() {
 	} else { // still
 		fmt.Println("not same")
 	}
+	fmt.Println(strings.Index("chicken", "ken"))
 }
